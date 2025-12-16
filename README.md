@@ -17,8 +17,8 @@ bun test
 Los retos viven en `challenges/<NN-nombre>/` y cada carpeta contiene:
 
 - `README.md`: explicación/enunciado del reto
-- `challenge.ts`: solución
-- `challenge.test.ts`: tests
+- `<NN-nombre>.ts`: solución
+- `<NN-nombre>.test.ts`: tests
 
 Ejemplo:
 

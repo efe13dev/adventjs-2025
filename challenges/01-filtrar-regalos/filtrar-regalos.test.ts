@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 
-import { filterGifts } from "./challenge";
+import { filterGifts } from "./filtrar-regalos";
 
 describe("Reto 01: Filtrar regalos", () => {
   test("return type", () => {
