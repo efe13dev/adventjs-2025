@@ -5,12 +5,28 @@
   "private": true,
   "scripts": {
     "test": "bun test",
-    "test:watch": "bun test --watch"
+    "test:watch": "bun test --watch",
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@eslint/compat": "^2.0.0",
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/parser": "^8.50.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^17.23.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-promise": "^7.2.1",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "eslint": "^9.39.2",
+    "eslint-config-goncy": "^1.1.1"
   }
 }

@@ -1,19 +1,19 @@
 export function manufactureGifts(
-  giftsToProduce: Array<{ toy: string, quantity: number }>
+  giftsToProduce: Array<{ toy: string; quantity: number }>,
 ): string[] {
-  const result: string[] = []
+  const result: string[] = [];
 
   for (const gift of giftsToProduce) {
-    const { toy, quantity } = gift
+    const { toy, quantity } = gift;
 
     if (!Number.isFinite(quantity) || quantity <= 0 || !Number.isInteger(quantity)) {
-      continue
+      continue;
     }
 
     for (let i = 0; i < quantity; i++) {
-      result.push(toy)
+      result.push(toy);
     }
   }
 
-  return result
+  return result;
 }
